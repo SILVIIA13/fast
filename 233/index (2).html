@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fastVPN | Приватный и быстрый VPN</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="nav-container anim-nav">
+        <a href="../index.html" class="back-nav glass-panel">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+        </a>
+        <header class="top-nav glass-panel">
+            <div class="logo"><i>fast</i><span class="white-logo">vpn</span></div>
+            <a href="https://t.me/твой_канал" target="_blank" class="tg-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </a>
+        </header>
+    </div>
+
+    <main class="container">
+
+        <!-- HERO -->
+        <section class="hero glass-panel anim-1">
+            <div class="hero-content">
+                <div class="hero-icon">
+                    <div class="hero-svg-icon">
+                        <img src="icon2.png" alt="fastMuz Icon" class="app-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="30" width="40" height="30" rx="6" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M28 30V24C28 17.4 52 17.4 52 24V30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="40" cy="45" r="5" fill="currentColor" opacity="0.9"/>
+                            <path d="M10 40C10 40 14 28 26 22M70 40C70 40 66 28 54 22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+                        </svg>
+                    </div>
+                    <div class="icon-glow"></div>
+                </div>
+                <div class="hero-text">
+                    <div class="hero-badge">Приватность нового уровня</div>
+                    <h1 class="hero-title">Сеть без<br>границ и слежки.</h1>
+                    <p class="hero-subtitle">Ультрабыстрый VPN с современными протоколами шифрования. Никаких логов, никаких ограничений — только чистый безопасный интернет.</p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-filled">Подключиться</a>
+                        <a href="#protocols" class="btn btn-ghost">Протоколы</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats-row glass-panel anim-2">
+            <div class="stat-item">
+                <span class="stat-num" data-target="50" data-suffix="+">0</span>
+                <span class="stat-label">Стран</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="10" data-suffix=" Гбит">0</span>
+                <span class="stat-label">Пропускная способность</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="0" data-suffix=" логов">0</span>
+                <span class="stat-label">Хранится данных</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="99" data-suffix="%">0</span>
+                <span class="stat-label">Uptime</span>
+            </div>
+        </section>
+
+        <!-- ФИЧИ -->
+        <section class="features-section anim-3">
+            <div class="features-grid-3">
+                <div class="glass-panel feat-card">
+                    <div class="feat-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><path d="M20 6l12 5v9c0 7-5 12-12 14C8 32 3 27 3 20v-9l12-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 class="feat-title">Нет логов</h3>
+                    <p class="feat-desc">Политика строгого отсутствия логов. Мы не знаем, что ты делаешь в сети — и не хотим знать.</p>
+                </div>
+                <div class="glass-panel feat-card">
+                    <div class="feat-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.8" opacity="0.3"/><circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M20 6v28M6 20h28" stroke="currentColor" stroke-width="1.2" opacity="0.3"/></svg>
+                    </div>
+                    <h3 class="feat-title">50+ стран</h3>
+                    <p class="feat-desc">Серверы по всему миру. Выбирай локацию за секунду и получай местный IP без ограничений.</p>
+                </div>
+                <div class="glass-panel feat-card">
+                    <div class="feat-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><path d="M8 20h6l4-12 4 24 4-14 4 8 2-6h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 class="feat-title">10 Гбит/с</h3>
+                    <p class="feat-desc">Максимальная скорость соединения на каждом сервере. VPN, который не тормозит твой интернет.</p>
+                </div>
+                <div class="glass-panel feat-card">
+                    <div class="feat-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="16" width="24" height="16" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M14 16v-4a6 6 0 0 1 12 0v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="20" cy="24" r="2.5" fill="currentColor" opacity="0.8"/></svg>
+                    </div>
+                    <h3 class="feat-title">AES-256</h3>
+                    <p class="feat-desc">Военный уровень шифрования. Каждый пакет данных защищён стандартом, которому доверяют правительства.</p>
+                </div>
+                <div class="glass-panel feat-card">
+                    <div class="feat-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><path d="M20 8v6M20 26v6M8 20h6M26 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/><circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.8"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+                    </div>
+                    <h3 class="feat-title">Kill Switch</h3>
+                    <p class="feat-desc">Автоматически блокирует интернет при разрыве VPN-соединения. Твой IP никогда не раскроется случайно.</p>
+                </div>
+                <div class="glass-panel feat-card">
+                    <div class="feat-icon">
+                        <svg viewBox="0 0 40 40" fill="none"><rect x="10" y="10" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/><path d="M14 20h12M20 14v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/></svg>
+                    </div>
+                    <h3 class="feat-title">Split Tunneling</h3>
+                    <p class="feat-desc">Выбирай, какие приложения идут через VPN, а какие — напрямую. Полный контроль над трафиком.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПРОТОКОЛЫ -->
+        <section class="glass-panel large-feature-block anim-4" id="protocols">
+            <div class="block-header">
+                <div class="section-badge">Под капотом</div>
+                <h2 class="brand-title">СОВРЕМЕННЫЕ ПРОТОКОЛЫ</h2>
+                <p class="service-desc">Используем только проверенные и актуальные протоколы. Никакого устаревшего PPTP или небезопасного L2TP.</p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div class="h-card glass-panel">
+                    <div class="h-card-icon">
+                        <svg viewBox="0 0 28 28" fill="none"><path d="M14 4l8 3.5v7c0 5-3.5 8.5-8 9.5-4.5-1-8-4.5-8-9.5v-7L14 4z" stroke="currentColor" stroke-width="1.8"/></svg>
+                    </div>
+                    <div class="h-card-text">
+                        <div class="h-card-title">WireGuard</div>
+                        <div class="h-card-desc">Самый современный протокол. Минималистичный код, максимальная скорость, криптография нового поколения.</div>
+                    </div>
+                    <div class="h-card-tag">Рекомендуется</div>
+                </div>
+                <div class="h-card glass-panel">
+                    <div class="h-card-icon">
+                        <svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M9 14l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="h-card-text">
+                        <div class="h-card-title">OpenVPN</div>
+                        <div class="h-card-desc">Проверенный временем открытый протокол. Максимальная совместимость и надёжность на любых устройствах.</div>
+                    </div>
+                    <div class="h-card-tag">Универсальный</div>
+                </div>
+                <div class="h-card glass-panel">
+                    <div class="h-card-icon">
+                        <svg viewBox="0 0 28 28" fill="none"><rect x="6" y="10" width="16" height="12" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M10 10V8a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="h-card-text">
+                        <div class="h-card-title">Shadowsocks</div>
+                        <div class="h-card-desc">Протокол-невидимка. Маскирует трафик под обычный HTTPS — обходит даже глубокую инспекцию пакетов (DPI).</div>
+                    </div>
+                    <div class="h-card-tag">Обход блокировок</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- КАК РАБОТАЕТ -->
+        <section class="glass-panel anim-5" style="padding: 0; overflow: hidden;">
+            <div style="padding: 50px 50px 40px; text-align: center;">
+                <div class="section-badge">Просто</div>
+                <h2 class="brand-title">КАК ЭТО РАБОТАЕТ</h2>
+            </div>
+            <div class="steps-row">
+                <div class="step-item">
+                    <div class="step-num">01</div>
+                    <div class="step-title">Скачай приложение</div>
+                    <div class="step-desc">Доступно для Windows, macOS, Android и iOS. Установка занимает меньше минуты.</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">02</div>
+                    <div class="step-title">Выбери сервер</div>
+                    <div class="step-desc">50+ стран на карте. Нажми на точку — и ты уже там. Или включи авто-выбор оптимального сервера.</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">03</div>
+                    <div class="step-title">Одна кнопка</div>
+                    <div class="step-desc">Нажми «Подключить». Весь трафик зашифрован. Ты невидим. Вот и всё.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="glass-panel cta-section anim-6">
+            <div class="cta-glow"></div>
+            <p class="cta-eyebrow">Защити себя сегодня</p>
+            <h2 class="cta-title">Невидимость — это<br><i>fast</i>VPN.</h2>
+            <p class="cta-sub">Подключайся за 30 секунд. Первые 7 дней — бесплатно. Без привязки карты.</p>
+            <div class="cta-btns">
+                <a href="#" class="btn btn-filled">Подключиться бесплатно</a>
+                <a href="https://t.me/твой_канал" target="_blank" class="btn btn-ghost">Написать в Telegram</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-logo"><i>fast</i><span>vpn</span></div>
+            <p class="footer-copy">© 2025 Fast Ecosystem. Все права защищены.</p>
+            <div class="footer-links">
+                <a href="#">Политика</a>
+                <a href="#">Поддержка</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
