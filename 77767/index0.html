@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST | Ecosystem</title>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Частицы фона -->
+    <canvas id="particles-canvas"></canvas>
+
+    <header class="top-nav glass-panel">
+        <div class="logo"><i>fast</i></div>
+        <nav class="nav-links">
+            <a href="#services">Сервисы</a>
+            <a href="#stats">О нас</a>
+        </nav>
+        <a href="https://t.me/твой_канал" target="_blank" class="tg-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+        </a>
+    </header>
+
+    <main class="container">
+        
+        <section class="hero glass-panel">
+            <div class="hero-badge">Экосистема нового поколения</div>
+            <h1 class="hero-title"><i>fast</i> <span class="white-logo">ecosystem</span></h1>
+            <p class="hero-subtitle">Добро пожаловать. Выбери нужный сервис и переходи на максимальную скорость.</p>
+            <div class="hero-cta">
+                <a href="#services" class="btn btn-primary">Начать</a>
+                <a href="#stats" class="btn btn-ghost">Узнать больше</a>
+            </div>
+            <!-- Декоративная сетка -->
+            <div class="hero-grid-deco" aria-hidden="true">
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-dot"></div>
+                <div class="grid-dot"></div>
+            </div>
+        </section>
+
+        <!-- Блок статистики -->
+        <section class="stats-row glass-panel" id="stats">
+            <div class="stat-item">
+                <span class="stat-num" data-target="47000">0</span>
+                <span class="stat-label">Пользователей</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="3">0</span>
+                <span class="stat-label">Сервиса</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="99" data-suffix="%">0</span>
+                <span class="stat-label">Uptime</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-num" data-target="24" data-suffix="/7">0</span>
+                <span class="stat-label">Поддержка</span>
+            </div>
+        </section>
+
+        <div class="services-stack" id="services">
+
+            <section class="glass-panel horizontal-card">
+                <!-- Иконка сервиса -->
+                
+                <div class="card-left">
+                    
+                    <h2 class="brand-title"><i>fast</i>Muz</h2>
+                    <div class="service-features">
+                        <span>🎵 Без рекламы</span>
+                        <span>📻 Офлайн-режим</span>
+                        <span>🔊 Hi-Fi качество</span>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <p class="service-desc">Свободный стриминговый плеер на базе открытого исходного кода. Полноценная независимая замена популярным музыкальным сервисам.</p>
+                    <a href="#" class="btn">Слушать</a>
+                </div>
+            </section>
+
+            <section class="glass-panel horizontal-card">
+                
+                <div class="card-left">
+                    
+                    <h2 class="brand-title"><i>fast</i>VPN</h2>
+                    <div class="service-features">
+                        <span>🔒 Шифрование</span>
+                        <span>⚡ 10 Гбит/с</span>
+                        <span>🌍 50+ стран</span>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <p class="service-desc">Приватный, безопасный и ультрабыстрый доступ в сеть без ограничений. Максимальная пропускная способность и современные протоколы шифрования.</p>
+                    <a href="#" class="btn">Подключить</a>
+                </div>
+            </section>
+
+            <section class="glass-panel horizontal-card">
+            
+                <div class="card-left">
+        
+                    <h2 class="brand-title"><i>fast</i>STORE</h2>
+                    <div class="service-features">
+                        <span>🛒 Быстро</span>
+                        <span>💎 Проверено</span>
+                        <span>🤝 Гарантии</span>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <p class="service-desc">Цифровая платформа для обмена, покупки и продажи программного обеспечения, ключей, аккаунтов и кастомных конфигураций в один клик.</p>
+                    <a href="#" class="btn">Открыть</a>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Блок "Почему Fast" -->
+        <section class="why-section glass-panel">
+            <h2 class="why-title">Почему <i>fast</i>?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">◈</div>
+                    <h3>Единая экосистема</h3>
+                    <p>Все сервисы под одним аккаунтом. Музыка, VPN и магазин в одном месте — без лишних регистраций.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">◈</div>
+                    <h3>Открытый код</h3>
+                    <p>Наши продукты построены на открытых технологиях. Прозрачность — не обещание, а архитектурное решение.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">◈</div>
+                    <h3>Нет слежки</h3>
+                    <p>Ноль аналитики, ноль рекламных трекеров. Твои данные — только твои. Никаких исключений.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Призыв к действию -->
+        <section class="cta-section glass-panel">
+            <div class="cta-glow" aria-hidden="true"></div>
+            <p class="cta-eyebrow">Готов начать?</p>
+            <h2 class="cta-title">Выбери свой <i>fast</i></h2>
+            <p class="cta-sub">Присоединяйся к тысячам пользователей, которые уже на максимальной скорости.</p>
+            <a href="https://t.me/твой_канал" target="_blank" class="btn btn-primary">Написать в Telegram</a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-logo"><i>fast</i></div>
+            <p class="footer-copy">© 2025 Fast Ecosystem. Все права защищены.</p>
+            <div class="footer-links">
+                <a href="#">Политика</a>
+                <a href="#">Поддержка</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
